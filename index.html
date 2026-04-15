@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepak Vasudevan | Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ─── CURSOR ─── -->
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-outline" id="cursor-outline"></div>
+
+<!-- ─── NAV ─── -->
+<nav class="nav" id="navbar">
+  <div class="nav-brand">
+    <span class="nav-logo">DV</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="/download-resume" class="nav-cta">Resume ↓</a>
+  <button class="nav-toggle" id="nav-toggle">☰</button>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for Opportunities
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-name">Deepak</span>
+      <span class="hero-name accent">Vasudevan</span>
+    </h1>
+
+    <div class="hero-tagline">
+      <span class="tagline-static">PL/SQL Developer → </span>
+      <span class="tagline-typed" id="typed-text"></span>
+      <span class="tagline-cursor">|</span>
+    </div>
+
+    <p class="hero-desc">
+      4+ years crafting high-performance Oracle PL/SQL pipelines at Mehta Multispecialty Hospital.
+      Now building end-to-end data engineering stacks with <strong>PySpark · dbt · Airflow · PostgreSQL</strong>.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">958K+</span>
+        <span class="stat-label">Records Processed</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">40%</span>
+        <span class="stat-label">Query Optimization</span>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost">Let's Connect</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="avatar-ring ring-3"></div>
+    <div class="avatar-ring ring-2"></div>
+    <div class="avatar-ring ring-1"></div>
+    <div class="avatar-core">
+      <div class="avatar-initials">DV</div>
+      <div class="avatar-label">Data Engineer</div>
+    </div>
+    <div class="orbit-dot dot-1"></div>
+    <div class="orbit-dot dot-2"></div>
+    <div class="orbit-dot dot-3"></div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">
+          I'm a <strong>PL/SQL Developer transitioning into Data Engineering</strong>, based in Chennai, India.
+          With 4+ years at Mehta Multispecialty Hospital, I've architected Oracle-based ETL pipelines
+          that process 500K+ healthcare records monthly.
+        </p>
+        <p>
+          My transition isn't a pivot — it's an evolution. I'm combining my deep database expertise
+          with modern data engineering tools to build production-grade pipelines using the medallion architecture,
+          cloud-native orchestration, and analytical data warehouses.
+        </p>
+        <p>
+          I hold an <strong>M.Sc. in Information Technology</strong> from the University of Madras and a
+          <strong>B.Sc. in Computer Science</strong> from Dr. MGR Educational and Research Institute.
+          I'm actively targeting MNC data engineering roles and open to international relocation.
+        </p>
+        <div class="about-chips">
+          <span class="chip">🏙️ Chennai, India</span>
+          <span class="chip">✈️ Open to Relocation</span>
+          <span class="chip">🏥 Healthcare Domain</span>
+          <span class="chip">📊 ETL Specialist</span>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <div class="info-card glass">
+          <div class="info-icon">🎓</div>
+          <div>
+            <div class="info-title">M.Sc. Information Technology</div>
+            <div class="info-sub">University of Madras</div>
+          </div>
+        </div>
+        <div class="info-card glass">
+          <div class="info-icon">🏥</div>
+          <div>
+            <div class="info-title">PL/SQL Developer</div>
+            <div class="info-sub">Mehta Multispecialty Hospital · 4+ yrs</div>
+          </div>
+        </div>
+        <div class="info-card glass">
+          <div class="info-icon">⚡</div>
+          <div>
+            <div class="info-title">Data Engineering Stack</div>
+            <div class="info-sub">PySpark · dbt · Airflow · PostgreSQL</div>
+          </div>
+        </div>
+        <div class="info-card glass">
+          <div class="info-icon">🌐</div>
+          <div>
+            <div class="info-title">Target Roles</div>
+            <div class="info-sub">Data Engineer · ETL Developer · SQL Analyst</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group glass">
+        <div class="skill-group-header">
+          <span class="skill-icon">🗄️</span>
+          <h3>Core Expertise</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag expert">Oracle PL/SQL (11g–21c)</span>
+          <span class="skill-tag expert">SQL*Loader</span>
+          <span class="skill-tag expert">DBMS_SCHEDULER</span>
+          <span class="skill-tag expert">Performance Tuning</span>
+          <span class="skill-tag expert">Stored Procedures</span>
+          <span class="skill-tag expert">Triggers & Packages</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass">
+        <div class="skill-group-header">
+          <span class="skill-icon">⚙️</span>
+          <h3>Data Engineering Stack</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag growing">PySpark</span>
+          <span class="skill-tag growing">Apache Airflow</span>
+          <span class="skill-tag growing">dbt (Data Build Tool)</span>
+          <span class="skill-tag growing">PostgreSQL</span>
+          <span class="skill-tag growing">Medallion Architecture</span>
+          <span class="skill-tag growing">ETL / ELT Pipelines</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass">
+        <div class="skill-group-header">
+          <span class="skill-icon">🐍</span>
+          <h3>Programming & Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag proficient">Python</span>
+          <span class="skill-tag proficient">Pandas</span>
+          <span class="skill-tag proficient">oracledb</span>
+          <span class="skill-tag proficient">Git & GitHub</span>
+          <span class="skill-tag proficient">WSL Ubuntu</span>
+          <span class="skill-tag proficient">Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass">
+        <div class="skill-group-header">
+          <span class="skill-icon">☁️</span>
+          <h3>Cloud & Upskilling</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag learning">Cloud Fundamentals</span>
+          <span class="skill-tag learning">Star Schema Design</span>
+          <span class="skill-tag learning">Data Warehouse</span>
+          <span class="skill-tag learning">Airflow DAG Design</span>
+          <span class="skill-tag learning">Docker (Learning)</span>
+          <span class="skill-tag learning">Kafka (Learning)</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="skill-legend">
+      <span><span class="dot expert-dot"></span> Expert</span>
+      <span><span class="dot growing-dot"></span> Production-ready</span>
+      <span><span class="dot proficient-dot"></span> Proficient</span>
+      <span><span class="dot learning-dot"></span> Actively Learning</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Portfolio Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card glass featured">
+        <div class="project-badge">Featured</div>
+        <div class="project-header">
+          <div class="project-icon">🏥</div>
+          <div class="project-meta">
+            <span class="project-type">Data Pipeline</span>
+            <div class="project-status live">Live DAG</div>
+          </div>
+        </div>
+        <h3 class="project-title">Surgery Patient Journey Pipeline</h3>
+        <p class="project-desc">
+          End-to-end Bronze→Silver→Gold medallion pipeline extracting surgery data from live Oracle hospital DB.
+          Transforms via Pandas, loads into a PostgreSQL star schema with 1 fact table + 6 dimension tables.
+          Orchestrated with Apache Airflow, scheduled daily at 5 AM.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>PySpark</span><span>Oracle DB</span>
+          <span>dbt</span><span>Apache Airflow</span><span>PostgreSQL</span>
+        </div>
+        <div class="project-metrics">
+          <div class="metric"><span class="metric-val">6</span><span class="metric-lbl">Dim Tables</span></div>
+          <div class="metric"><span class="metric-val">Daily</span><span class="metric-lbl">Scheduled</span></div>
+          <div class="metric"><span class="metric-val">Live</span><span class="metric-lbl">Oracle Data</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass featured">
+        <div class="project-badge">Featured</div>
+        <div class="project-header">
+          <div class="project-icon">📋</div>
+          <div class="project-meta">
+            <span class="project-type">Data Warehouse</span>
+            <div class="project-status live">Live DAG</div>
+          </div>
+        </div>
+        <h3 class="project-title">OP/IP Patient Registration Pipeline</h3>
+        <p class="project-desc">
+          High-volume patient registration ETL pipeline processing nearly 958K records from Oracle source
+          to PostgreSQL data warehouse. Uses PySpark for distributed transformation across medallion layers,
+          with Airflow DAG orchestration on WSL Ubuntu.
+        </p>
+        <div class="project-stack">
+          <span>PySpark</span><span>Oracle oracledb</span><span>Airflow</span>
+          <span>PostgreSQL</span><span>Medallion Architecture</span><span>Power BI</span>
+        </div>
+        <div class="project-metrics">
+          <div class="metric"><span class="metric-val">958K+</span><span class="metric-lbl">Records</span></div>
+          <div class="metric"><span class="metric-val">3-Layer</span><span class="metric-lbl">Medallion</span></div>
+          <div class="metric"><span class="metric-val">Airflow</span><span class="metric-lbl">Orchestrated</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <div class="project-header">
+          <div class="project-icon">⚡</div>
+          <div class="project-meta">
+            <span class="project-type">Performance Engineering</span>
+          </div>
+        </div>
+        <h3 class="project-title">Oracle ETL Performance Optimization</h3>
+        <p class="project-desc">
+          Diagnosed and resolved critical Oracle wait events (resmgr:cpu quantum, library cache mutex/lock)
+          via V$SYSTEM_EVENT analysis. Achieved 40% query performance improvement and 37% batch window
+          reduction across production healthcare ETL workflows.
+        </p>
+        <div class="project-stack">
+          <span>Oracle 21c</span><span>PL/SQL</span><span>V$SYSTEM_EVENT</span>
+          <span>DBMS_SCHEDULER</span><span>SQL Tuning</span>
+        </div>
+        <div class="project-metrics">
+          <div class="metric"><span class="metric-val">40%</span><span class="metric-lbl">Faster Queries</span></div>
+          <div class="metric"><span class="metric-val">37%</span><span class="metric-lbl">Batch Reduction</span></div>
+          <div class="metric"><span class="metric-val">500K+</span><span class="metric-lbl">Rec/Month</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">PL/SQL Developer</h3>
+              <div class="timeline-company">Mehta Multispecialty Hospital India Pvt. Ltd. · Chennai</div>
+            </div>
+            <div class="timeline-period">4+ Years</div>
+          </div>
+          <ul class="timeline-points">
+            <li>Designed and maintained complex Oracle PL/SQL stored procedures, packages, triggers, and functions for hospital management systems</li>
+            <li>Built ETL pipelines using SQL*Loader processing <strong>500K+ records monthly</strong> with 40% query performance improvement</li>
+            <li>Automated batch jobs using DBMS_SCHEDULER, reducing manual intervention and achieving 37% batch window reduction</li>
+            <li>Developed Power BI reports from Oracle data for clinical and administrative decision-making</li>
+            <li>Collaborated on Oracle 11g → 21c migration, ensuring zero data loss across critical healthcare schemas</li>
+            <li>Implemented data quality checks and exception handling for surgical and outpatient registration workflows</li>
+          </ul>
+          <div class="timeline-tech">
+            <span>Oracle PL/SQL</span><span>SQL*Loader</span><span>DBMS_SCHEDULER</span>
+            <span>Power BI</span><span>ETL Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CERTIFICATIONS ─── -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 05</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert-card glass">
+        <div class="cert-logo oracle">ORA</div>
+        <div class="cert-info">
+          <h3>Oracle Database — Core Domain</h3>
+          <p>Oracle PL/SQL, SQL*Loader, and Performance Tuning expertise validated through production work on Oracle 11g–21c</p>
+          <span class="cert-badge">Core Expertise</span>
+        </div>
+      </div>
+      <div class="cert-card glass">
+        <div class="cert-logo python">PY</div>
+        <div class="cert-info">
+          <h3>Python for Data Engineering</h3>
+          <p>Applied Python proficiency across production projects: Pandas, PySpark, oracledb, and Airflow DAG development</p>
+          <span class="cert-badge">Applied</span>
+        </div>
+      </div>
+      <div class="cert-card glass cert-upcoming">
+        <div class="cert-logo upcoming">+</div>
+        <div class="cert-info">
+          <h3>Upcoming Certifications</h3>
+          <p>Currently pursuing certifications in cloud data platforms and Apache Spark. Details to be added shortly.</p>
+          <span class="cert-badge upcoming-badge">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GITHUB ─── -->
+<section class="section section-alt github-section" id="github">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 06</span>
+      <h2 class="section-title">GitHub Repositories</h2>
+    </div>
+
+    <div class="github-coming-soon glass">
+      <div class="github-icon">
+        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+      </div>
+      <div class="github-content">
+        <h3>Portfolio Repositories Coming Soon</h3>
+        <p>
+          Public GitHub repositories for both pipeline projects — Surgery Patient Journey Pipeline and
+          OP/IP Patient Registration Pipeline — are being prepared with full documentation,
+          README guides, and clean code. Check back shortly.
+        </p>
+        <div class="github-repos-preview">
+          <div class="repo-preview glass">
+            <div class="repo-lang py"></div>
+            <div class="repo-info">
+              <span class="repo-name">surgery-patient-journey-pipeline</span>
+              <span class="repo-desc">Medallion ETL · PySpark · dbt · Airflow · PostgreSQL</span>
+            </div>
+            <span class="repo-status">Soon</span>
+          </div>
+          <div class="repo-preview glass">
+            <div class="repo-lang py"></div>
+            <div class="repo-info">
+              <span class="repo-name">op-ip-registration-pipeline</span>
+              <span class="repo-desc">958K records · PySpark · Oracle → PostgreSQL DW</span>
+            </div>
+            <span class="repo-status">Soon</span>
+          </div>
+          <div class="repo-preview glass placeholder">
+            <div class="repo-lang plus">+</div>
+            <div class="repo-info">
+              <span class="repo-name">More projects being added...</span>
+              <span class="repo-desc">New repositories each week</span>
+            </div>
+            <span class="repo-status">Watch</span>
+          </div>
+        </div>
+        <a href="https://github.com/deepakvasudev24" target="_blank" class="btn-ghost github-btn">
+          Follow on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// 07</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-lead">
+          Open to <strong>Data Engineer, ETL Developer,</strong> and <strong>SQL Analyst</strong> roles at MNCs.
+          Available for immediate discussions. Based in Chennai, open to relocation.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:deepakvasudev24@gmail.com" class="contact-link glass">
+            <span class="contact-link-icon">✉️</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">deepakvasudev24@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/deepakvasudev24" target="_blank" class="contact-link glass">
+            <span class="contact-link-icon">💼</span>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/deepakvasudev24</span>
+            </div>
+          </a>
+          <a href="https://github.com/deepakvasudev24" target="_blank" class="contact-link glass">
+            <span class="contact-link-icon">⚡</span>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/deepakvasudev24</span>
+            </div>
+          </a>
+          <a href="/download-resume" class="contact-link glass">
+            <span class="contact-link-icon">📄</span>
+            <div>
+              <span class="contact-link-label">Resume</span>
+              <span class="contact-link-value">Download PDF</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap glass">
+        <h3 class="form-title">Send a Message</h3>
+        <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Job opportunity, collaboration, or just saying hi..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">DV</span>
+      <span class="footer-tagline">PL/SQL → Data Engineering</span>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="/download-resume">Resume</a>
+    </div>
+    <div class="footer-copy">
+      © 2025 Deepak Vasudevan · Built with Flask · Deployed on Render
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
